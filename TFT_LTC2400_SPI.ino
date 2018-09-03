@@ -205,7 +205,9 @@ void loop() {
 
     tft.drawPixel(n % 200, osc[n % 200] + 140, ILI9341_BLACK);
     osc[n % 200] = volt * 200000;
+    
     //tft.drawPixel(n % 200, osc[n % 200] + 140, ILI9341_GREEN);
+    
     tft.drawFloat(osc[n % 200], 2, 26, 181, 2);
 
     if (volt > vMx) vMx = volt;
